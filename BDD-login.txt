@@ -1,0 +1,88 @@
+Feature: user wants to log in on www.bmail.com so that user can access the website.
+
+
+Scenario: user should be able to log in successfully with valid credential  
+Given user is on bmail.com home page 
+When enter valid user name   
+And enter valid password  
+And click sing in button
+Then user should be logged in successfully
+And can see the welcome message   
+
+Scenario: user should not be able to log in successfully with invalid credential  
+Given user is on bmail.com home page 
+When enter valid user name   
+And enter invalid password  
+And click sing in button
+Then user should not be logged in successfully
+And can see the error message   
+
+Scenario: user should not be able to log in successfully with invalid credential  
+Given user is on bmail.com home page 
+When enter valid user name   
+And enter invalid password  
+And click sing in button
+Then user should not be logged in successfully
+And can see the error message   
+
+Scenario: user should not able to log in successfully with invalid credential  
+Given user is on bmail.com home page 
+When enter invalid user name   
+And enter valid password  
+And click sing in button
+Then user should not be logged in successfully
+And can see the error message   
+
+Scenario: user should not able to log in successfully with invalid credential  
+Given user is on bmail.com home page 
+When enter invalid user name   
+And enter invalid password  
+And click sing in button
+Then user should not be logged in successfully
+And can see the error message   
+
+Scenario: user should not able to log in successfully with invalid credential  
+Given user is on bmail.com home page 
+When enter valid user name   
+And enter blank password  
+And click sing in button
+Then user should not be logged in successfully
+And can see the error message   
+
+
+
+Scenario: user should not able to log in successfully with invalid credential  
+Given user is on bmail.com home page 
+When enter invalid user name   
+And enter blank password  
+And click sing in button
+Then user should not be logged in successfully
+And can see the error message   
+
+Scenario: user should not able to log in successfully with invalid credential  
+Given user is on bmail.com home page 
+When enter blank user name   
+And enter valid password  
+And click sing in button
+Then user should not be logged in successfully
+And can see the error message   
+
+Scenario: user should not able to log in successfully with invalid credential  
+Given user is on bmail.com home page 
+When enter blank user name   
+And enter invalid password  
+And click sing in button
+Then user should not be logged in successfully
+And can see the error message   
+
+
+
+
+Scenario: user should not able to log in successfully with invalid credential  
+Given user is on bmail.com home page 
+When enter blank user name   
+And enter blank password  
+And click sing in button
+Then user should not be logged in successfully
+And can see the error message   
+
